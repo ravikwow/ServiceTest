@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     public void buttonClick(View view) {
         Intent intent = new Intent(this, TestService.class);
         startService(intent.putExtra("duration", 7));
+        startService(intent.putExtra("duration", 5));
         startService(intent.putExtra("duration", 2));
     }
 }
